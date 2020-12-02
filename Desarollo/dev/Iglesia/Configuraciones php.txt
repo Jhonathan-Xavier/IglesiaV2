@@ -1,0 +1,104 @@
+biblioteca de archivos github
+https://github.com/gustavoxa/Parroquia.git
+--------------------------------------
+instalar ubuntu server
+Se necesita configurar una memoria swap.
+Para iniciar cualquier descarga o actualizacion ejecutamos 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get autoremove 
+
+Instalar interfaz grafica
+sudo apt-get install ubuntu-desktop
+sudo apt-get install x-window-system-core gnome-core
+startx (inicia el proceso)
+Se recomienda instalar las actualizaciones y reiniciar el servidor.
+
+Instalar Apache
+sudo apt-get install apache2
+sudo ufw status (ver el estado de apache)
+sudo ufw enable (cambiar de estado)
+sudo ufw status (verificamos el estado)
+sudo ufw app list (aplicaciones habilitados)
+sudo ufw app info "Apache full" (verificamos estado de las puertas puertos 80 y direccion ipv4)
+caso de no tener habilitados 
+
+Instalar Mysql
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+ponemos una contraseña temporal
+la mayoria de opciones se pone si para no tener bases de datos de pila además son solo permisos externos.
+para probar mysql 
+sudo mysql -u root -p
+escribimos la contraseña temporal
+escribimos
+show databases;
+exit;
+
+Instalar php
+sudo apt-get install php libapache2-mod-php php-mysql
+sudo service apache2 restart
+
+Instalar phpmyadmin
+sudo apt-get install phpmyadmin
+la contraseña debe tener letras sino saldra un error
+
+
+Permisos de lectura y escritura 
+sudo chown -R $USER:root /var/www 
+----------
+Habilitar phpmyadmin
+sudo gedit /etc/apache2/apache2.conf
+en el documento al fondo
+# Include phpmyadmi file
+Include /etc/phpmyadmin/apache.conf
+luego aplicamos el comando
+sudo service apache2 restart 
+accedemos a mysql
+sudo mysql -u root -p
+use mysql;
+update user set authentication_string=PASSWORD("contraseña") where user='root';
+para visualizar los usuarios
+selected user, plugin from user; 
+cambiar los permisos
+update user set plugin="mysql_native_password" where user='root';
+por ultimo debemos utilizar el comando descrito a continuación para que los cambios se hagan efectivos
+FLUSH PRIVILEGES;
+-----------------------------------------
+paquetes rotos
+sudo rm-rf (dirección del daño)
+sudo dpkg --configure -a
+------------
+sudo fuser -k (dirección del daño)
+
+eliminar programas
+sudo apt-get --purge remove (programa) 
+sudo rm -f archivo
+
+sudo su (super usuario)
+-----------
+github
+instalamos git
+sudo apt-get install git 
+git --version
+git config --global user.name "nombre del usuario del repositorio"
+git config --global user.email "correo con el que creamos la cuenta"
+una vez creado el usuario empezamos con la creacion del archivo virtual
+--------------------------
+touch (nombre del archivo)
+gedit  (nombre del archivo al que pusimos en el touch) en este paso editamos el archivo
+pasamos a los siguientes pasos
+git status (verificamos en que condicion se encuentra el archivo)
+git add (nombre del archivo ya creado y modificado)
+podemos verificar el estado si ya se agrego
+git commit -m "nombre de la biblioteca"  (nombre del archivo ya creado y modificado)
+git push -u origin master 
+ponemos el nombre del usuario
+y la contraseña 
+esto lo realizamos como si iniciaramos sesion en el github
+y nuestro archivo estara subido a la biblioteca del github
+
+
+
+ 
+

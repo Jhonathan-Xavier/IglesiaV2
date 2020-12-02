@@ -1,0 +1,50 @@
+Bautismo
+	fecha registro
+	fecha bautismo
+	parroquia
+	libro
+	catequisadoFK
+
+Confirmaución
+	nivel (1,2)
+	fecha registro
+	fecha confirmacion
+	parroquia nivel 1
+	parroquia nivel 2
+	libro
+
+Comunion
+	nivel (1,2)
+	fecha registro
+	fecha confirmacion
+	parroquia nivel 1
+	parroquia nivel 2
+	libro
+
+Matriminio
+	fecha registro
+	fecha matrimonio
+	parroquia
+	libro
+	catequisadosFK (novio)
+	catequeisadosFK (novia)
+
+Sacramantos (Cursos)
+	bautismoFK
+	confirmacionFK
+	comunionFK
+	matrimonioFK
+	(catequistaFK)
+---------------------------------
+otra tabla para catequsitas
+Sacramantos (Cursos)
+	bautismoFK
+	confirmacionFK
+	comunionFK
+	matrimonioFK
+	(catequistaFK)
+
+------------------------------
+no es inscripción es registro
+
+

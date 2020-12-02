@@ -1,0 +1,191 @@
+----------------------------------------------
+Pasantías
+
+Se necesita:
+un libro en el que tiene que buscar
+un campo más de texto, que diga libro 1 pagina tal
+
+modo en lugar de ocupación (Fomr)
+
+pagina: sanginacionloyola.com
+
+certificado-Si
+xavier
+viculacion.ciencia
+eviar lo que necesito
+
+Ing. Lourdes Mariela 
+
+Inscripción a traves del sistema, 
+ingresar eliminar
+
+secretaria: ingresar y hacer modificar y eliminar
+catequista: ingresar a poner asistencia
+datos: 
+
+
+sistema de solicitudes
+
+forms para:
+
+-administrador
+queitar agragar
+COnsulta tiene tiene: agragar-eliminar-editar
+consulta: CI 
+
+Trabaja con la encargada del dpto.
+este proyecto sirve para vinculación como pasantías
+Su dir de carrera le aseguró eso
+	Pablo Hidaglo
+-------------------------------------------------
+
+https://www.youtube.com/watch?v=OyXKttR7y6c&list=PLZPrWDz1MolrxS1uw-u7PrnK66DCFmhDR&index=4
+
+
+...............
+Deberia relacionar Padrinos con curso
+y curso con alumnos
+ya que en un curso puedo tener estos padrinos
+y en este otro curso otros.
+
+
+Padrino puede aparecer en muchos cursos
+Curso puede tener muchos padrinos por "alumno"
+m -m la tabla intermedia es alumno
+
+Cateteqisado 
+catequisado es parte de un solo curso
+un curso tiene muchos catequisados
+
+Catequisado tiene muchos padrinos
+Padrinos tienen un catequisado
+
+Alumno
+Padrino
+Curso
+Entonces, realmente: 
+curso tiene alumnos
+alumnos tiene padrinos
+pardrinos tienen alumnos
+alumnos tienen cursos
+
+no hay relación directa entre padrino y curso,
+sino es a traves del alumno
+---------------
+Funcionario se relaciona con curso porque puede administrar varios
+Curso tiene varios funcionarios
+
+Funcionarios (Secretaria, Sacerdote, Profesor incluso, etc)
+con administrar me refiero a editar, crear, modificar, eliminar
+
+-----------
+Sacramentos
+-Bautizo: Crear, Eliminar, Editar, Ver
+
+Agregar: Funcionario, Sacramento, Alumno, Taller
+
+
+
+-----------Notas 26/06
+-Boutizo: curso de un día
+
+Secretaria llena las fichas de bautizo y el sacerdote
+
+-cuentas diferentes
+
+-Admin accede a todo
+
+-------Secretaria 
+implementar funcionalidad y formularios
+probar 
+
+-----
+El unico que puede dar curos es el sacerdote
+si el da calses debe aparecer como instructor
+o sea, todo el que haga alguna gestión
+
+cuando es un instructor de bautismo
+es y cambia a otro
+
+el mismo instructor puede dar direnres clases
+
+curso es aula física
+curso de ser sacramento puede 
+numero de catequizados va hasta 35 
+activo: 
+
+
+catequesis
+como el semster
+
+
+bautismo o matrimono
+me inscribo hoy
+
+pero recibo el sacramento otro día
+
+-------------
+me casé hace 8 años
+debo poder sacar mi acta.
+
+----------
+se logea por usuario y clave y rol
+rol: administrador, parroco, instructor, secretatia, catqusista
+
+me dice el perido: 2020-2021
+2021-2022
+
+
+tenemos modulos:
+quiero hacer pase de semestre
+busca el estudiante
+
+y aparece todo lo que tiene aprobado,
+en "el año 2019-2020" aprobó la comunión
+
+fue bautizado en "
+
+hustorial del estudiante
+-------}}el chico viene con la fé de bautismo
+y yo le registro los datos, 
+parroquia en la que realizó el bautismo
+eso lo haría el administador
+
+en la fe de bautizo deberiamos agregar la parroquia
+
+
+cmapo para agregar que ya ha pasado un sacramento en
+alguna otra parroquia.
+
+
+--------control asistenica
+total si tenía 20 clases
+sumatoria de 20 con faltas justicia
+atrassos 
+faltas injusttificadas
+
+--------
+secretaria - parroco puede consultar las listas
+
+nombres completos
+carrera
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
